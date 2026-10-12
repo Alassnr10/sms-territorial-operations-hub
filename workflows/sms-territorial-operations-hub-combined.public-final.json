@@ -1,5 +1,5 @@
 {
-  "name": "Publication - SMS Territorial Operations Hub - Combined Canvas",
+  "name": "Publication - SMS Territorial Operations Hub - Combined Canvas vf",
   "nodes": [
     {
       "parameters": {
@@ -8,7 +8,7 @@
         "responseMode": "responseNode",
         "options": {}
       },
-      "id": "45a31349-fa0c-4c56-b9b0-394baacd27cb",
+      "id": "19cc21bf-57f3-4d4c-a224-7f06d1b3b642",
       "name": "Webhook — Receive SMS",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2.1,
@@ -40,7 +40,7 @@
         },
         "options": {}
       },
-      "id": "47ff9a2c-de2b-4216-8c1e-45948041a900",
+      "id": "fc976f5d-5d32-4514-b989-6e48010daa4a",
       "name": "Verify Gateway",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
@@ -134,7 +134,7 @@
           "dotNotation": true
         }
       },
-      "id": "1619b247-39ac-4e23-bf6c-6050e26a67c0",
+      "id": "03eba4ca-bb86-408d-a0e5-18a99ddc5764",
       "name": "Normalize Envelope",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -169,7 +169,7 @@
         },
         "options": {}
       },
-      "id": "570a22b7-8724-4cf3-8291-3ea3f9123ac2",
+      "id": "d8c89684-c5ee-4027-b826-04d21d9d9b6f",
       "name": "Validate Envelope",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
@@ -203,7 +203,7 @@
         },
         "limit": 1
       },
-      "id": "a0bdb2e0-4f35-4327-97b3-c352e5cec20c",
+      "id": "4e80fe07-7c58-4eb3-b781-80ac7999491e",
       "name": "Find Existing Message",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -239,7 +239,7 @@
         },
         "options": {}
       },
-      "id": "d5542d9a-1e53-4e1d-8188-641ce58d64c0",
+      "id": "3ee2c13b-227c-4077-9f67-f319ad6f5f28",
       "name": "Check Duplicate",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
@@ -252,7 +252,7 @@
     },
     {
       "parameters": {},
-      "id": "df6e641a-97fe-47fa-b992-c2d4158b8a47",
+      "id": "74e39049-6143-4355-8b44-02094de2f3c5",
       "name": "Duplicate SMS — Placeholder",
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
@@ -439,7 +439,7 @@
         },
         "options": {}
       },
-      "id": "029e4dd5-36eb-45c6-8279-95b34a5e6c76",
+      "id": "c87062b7-3f1e-48e6-b7e5-370a03d8dfc9",
       "name": "Register Inbound Message",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -460,7 +460,7 @@
           "responseCode": 200
         }
       },
-      "id": "20a8f85b-dca8-479d-9211-bff4b13a6bb5",
+      "id": "ccfbe52a-db20-40d3-a814-62c4e6afcfad",
       "name": "Acknowledge Gateway",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.5,
@@ -488,7 +488,7 @@
         },
         "limit": 2
       },
-      "id": "3b02b09c-6b29-4b14-854c-d89f044b816a",
+      "id": "ea6587c1-384f-4d44-8793-0b77dc6cc59b",
       "name": "Find Agent",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -524,7 +524,7 @@
         },
         "options": {}
       },
-      "id": "beb52b2e-f0b1-4730-8b2b-d21e178f2957",
+      "id": "4bb4a146-a78f-4c28-9e07-ab4984d00e51",
       "name": "Check Agent Access",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
@@ -558,7 +558,7 @@
         },
         "options": {}
       },
-      "id": "ffa5d94e-3401-4e98-a06d-3823d19fcc6e",
+      "id": "985c5774-50de-4666-95c8-f87669730f2e",
       "name": "Validate Interpretation",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
@@ -592,7 +592,7 @@
         },
         "options": {}
       },
-      "id": "bc8cb35d-029f-4c2b-b2ac-22b04adc06ec",
+      "id": "6aaf6f7a-0a69-49ec-a2a9-c300b9b8fa0c",
       "name": "Check Interpretation and Scope",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
@@ -709,7 +709,7 @@
           "fallbackOutput": "none"
         }
       },
-      "id": "e2e313fa-ae13-4c4e-8d4c-350442b7bdb5",
+      "id": "58b665db-9e32-4e63-a06b-f593e6bfc510",
       "name": "Route Intent",
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
@@ -720,7 +720,7 @@
     },
     {
       "parameters": {},
-      "id": "b2f92c2b-8cb3-4d10-b8a5-4ea38ed9177f",
+      "id": "910ab1ef-e512-4ad1-ba75-0ee9177820bc",
       "name": "Out of Scope — Placeholder",
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
@@ -731,7 +731,7 @@
     },
     {
       "parameters": {},
-      "id": "7b0b229d-610d-45dc-a188-51b2fb5d5573",
+      "id": "e6f5f6c6-0c25-46a1-b051-46984669487f",
       "name": "Invalid Interpretation — Placeholder",
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
@@ -742,7 +742,7 @@
     },
     {
       "parameters": {},
-      "id": "e39ca104-5166-4745-bceb-b4208189c6a5",
+      "id": "ac6bdb88-3639-447f-b6b5-df97b7982a0c",
       "name": "Agent Access Denied — Placeholder",
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
@@ -753,7 +753,7 @@
     },
     {
       "parameters": {},
-      "id": "ecca024c-809b-4c4e-b205-743ca6e508d8",
+      "id": "ed9fd82f-8b86-4e7a-8a7e-64133a573884",
       "name": "Invalid Envelope — Placeholder",
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
@@ -772,7 +772,7 @@
           "responseCode": 200
         }
       },
-      "id": "888ad6c8-bb10-4b66-80d8-cd61e602cbbd",
+      "id": "cbcb3d74-6039-49b8-9f5d-75bcfc169b74",
       "name": "Acknowledge Duplicate",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.5,
@@ -792,7 +792,7 @@
           "responseCode": 400
         }
       },
-      "id": "954793f8-92bf-48f9-8860-9e7cd98fabe1",
+      "id": "dfe130ce-923e-4ec9-ba72-7b7556bb3771",
       "name": "Reject Invalid Envelope",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.5,
@@ -806,7 +806,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "function parseCommand(textValue) {\n  const originalText = typeof textValue === 'string' ? textValue : '';\n  const commandText = originalText.trimStart();\n  const commandMatch = /^(UPDATE|ALERT|STATUS|BRIEF)(?=$|\\s)/i.exec(commandText);\n  const explicitIntent = commandMatch ? commandMatch[1].toUpperCase() : null;\n  const commandDetected = Boolean(commandMatch);\n  const afterCommand = commandDetected\n    ? commandText.slice(commandMatch[0].length).trimStart()\n    : originalText;\n\n  let commandValid = true;\n  let commandError = null;\n  let remainingText = commandDetected ? afterCommand.trim() : originalText;\n  let shareRequested = false;\n  let incidentReference = null;\n  let requestedIncidentStatus = null;\n\n  if (explicitIntent === 'BRIEF' && afterCommand.trim().length > 0) {\n    commandValid = false;\n    commandError = 'unexpected_brief_arguments';\n  }\n\n  if (explicitIntent === 'UPDATE' && commandValid) {\n    let rest = afterCommand;\n    let parsedShare = false;\n    let parsedIncidentReference = null;\n    let parsedIncidentStatus = null;\n    let parseError = null;\n\n    while (rest.length > 0) {\n      const tokenMatch = /^(\\S+)(?:\\s+|$)/.exec(rest);\n      if (!tokenMatch) break;\n\n      const token = tokenMatch[1];\n      const statusMatch = /^STATUS=(acknowledged|resolved)$/i.exec(token);\n\n      if (/^SHARE$/i.test(token)) {\n        if (parsedShare) parseError = 'duplicate_share_directive';\n        else parsedShare = true;\n      } else if (/^SHARE[=:]/i.test(token)) {\n        parseError = 'invalid_share_directive';\n      } else if (/^INC(?:-|_|[0-9])/i.test(token)) {\n        if (!/^INC-[0-9]+$/i.test(token)) {\n          parseError = 'invalid_incident_reference';\n        } else if (parsedIncidentReference !== null) {\n          parseError = 'duplicate_incident_reference';\n        } else {\n          parsedIncidentReference = token.toUpperCase();\n        }\n      } else if (/^STATUS=/i.test(token)) {\n        if (!statusMatch) {\n          parseError = 'invalid_incident_status';\n        } else if (parsedIncidentStatus !== null) {\n          parseError = 'duplicate_incident_status';\n        } else {\n          parsedIncidentStatus = statusMatch[1].toLowerCase();\n        }\n      } else {\n        break;\n      }\n\n      if (parseError) break;\n      rest = rest.slice(tokenMatch[0].length);\n    }\n\n    if (parseError) {\n      commandValid = false;\n      commandError = parseError;\n      remainingText = afterCommand.trim();\n    } else {\n      shareRequested = parsedShare;\n      incidentReference = parsedIncidentReference;\n      requestedIncidentStatus = parsedIncidentStatus;\n      remainingText = rest.trim();\n    }\n  }\n\n  return {\n    explicit_intent: explicitIntent,\n    command_detected: commandDetected,\n    command_valid: commandValid,\n    command_error: commandError,\n    remaining_text: remainingText,\n    share_requested: shareRequested,\n    incident_reference: incidentReference,\n    requested_incident_status: requestedIncidentStatus,\n  };\n}\n\nconst agentItem = $input.item;\nconst agentData = agentItem?.json ?? {};\nconst envelopeData = $('Normalize Envelope').item.json ?? {};\n\nreturn {\n  json: {\n    ...agentData,\n    ...envelopeData,\n    ...parseCommand(envelopeData.text),\n    source_envelope: { ...envelopeData },\n    authenticated_agent: { ...agentData },\n  },\n  ...(agentItem?.binary ? { binary: agentItem.binary } : {}),\n};"
       },
-      "id": "f2e2c8a4-835f-4913-b2cd-2c6f1ee6c7eb",
+      "id": "9633345d-95ee-48b5-866f-c2bff673ec44",
       "name": "Detect Explicit Command",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -900,7 +900,7 @@
           "allMatchingOutputs": false
         }
       },
-      "id": "f698f91f-762c-486a-a808-a38bb17923e9",
+      "id": "1977ee1f-697b-40cb-a162-776f6caf2fba",
       "name": "Check Parsing Requirement",
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
@@ -1041,7 +1041,7 @@
           "systemPromptTemplate": "={{ \"Tu extrais des champs métier d’un SMS d’opérations territoriales. Le seul texte à analyser est l’entrée remaining_text. N’utilise aucune information extérieure et ne complète jamais les faits manquants. L’intention explicite déjà détectée est : \" + ($json.explicit_intent ?? 'aucune') + \". Si elle vaut UPDATE ou ALERT, retourne cette même intention. Sinon, choisis uniquement UPDATE ou ALERT à partir de remaining_text.\\nUPDATE : category et severity doivent être null. Extrais subject et status uniquement s’ils sont clairement exprimés; status vaut unknown si le statut applicable n’est pas établi. Extrais progress uniquement si un pourcentage est explicitement présent, sinon null.\\nALERT : status et progress doivent être null. Extrais category, subject et area seulement s’ils sont clairement présents. N’infère pas une gravité administrative d’un texte inquiétant : severity vaut unknown si aucune gravité n’est explicitement indiquée.\\nNe déduis jamais acknowledged ou resolved. Ces directives sont traitées séparément par le parsing déterministe. N’invente ni zone, ni date, ni progression, ni catégorie, ni statut, ni gravité. reported_event_at vaut une date ISO YYYY-MM-DD ou une date-heure ISO valide uniquement si elle est explicitement identifiable; conserve la précision fournie et n’ajoute jamais d’heure à une date seule. Sinon, null.\\nmissing_fields contient uniquement les noms de champs autorisés dont la valeur est null ou unknown. extraction_confidence est seulement informative : elle ne décide jamais du routage, des droits ou d’une décision administrative.\\nRègle AREA : renseigne area seulement lorsque le texte indique clairement que l’événement ou l’activité se situe dans cette zone. Un lieu mentionné seulement comme destination, direction ou référence géographique ne suffit pas. « route vers Koura », « en direction de Koura » et « route de Koura » lorsqu’il s’agit simplement de la route ne doivent pas produire area=Koura. « inondation à Koura » et « travaux dans la zone de Koura » peuvent produire area=Koura. En cas d’ambiguïté, retourne area=null. Ne déduis jamais une zone uniquement du nom contenu dans le sujet.\" }}"
         }
       },
-      "id": "cb0be2f8-f54b-4045-a7e4-8896493a9cae",
+      "id": "9e9f33f2-1acb-4eeb-9a0d-c625c427e502",
       "name": "Extract Message Fields",
       "type": "@n8n/n8n-nodes-langchain.informationExtractor",
       "typeVersion": 1.2,
@@ -1064,7 +1064,7 @@
           "maxRetries": 0
         }
       },
-      "id": "d8c555a4-4a38-43c2-90cb-0a5bb011c881",
+      "id": "95b56ff4-5826-44d9-a309-d99ba2253153",
       "name": "OpenAI Chat Model",
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1.3,
@@ -1078,7 +1078,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "const trusted = $('Check Parsing Requirement').item.json;\nconst current = $input.item.json;\nconst output = current.output;\n\nconst fail = () => {\n  throw new Error('invalid_interpretation_output');\n};\n\nconst fields = [\n  'intent',\n  'subject',\n  'category',\n  'area',\n  'status',\n  'progress',\n  'severity',\n  'reported_event_at',\n  'missing_fields',\n  'extraction_confidence',\n];\nconst missingFieldAllowlist = new Set([\n  'subject',\n  'category',\n  'area',\n  'status',\n  'progress',\n  'severity',\n  'reported_event_at',\n]);\n\nif (\n  !trusted ||\n  !output ||\n  typeof output !== 'object' ||\n  Array.isArray(output) ||\n  Object.keys(output).length !== fields.length ||\n  !fields.every((key) => Object.prototype.hasOwnProperty.call(output, key))\n) {\n  fail();\n}\n\nconst intents = ['UPDATE', 'ALERT'];\nconst statuses = ['unknown', 'planned', 'ongoing', 'blocked', 'completed'];\nconst severities = ['unknown', 'low', 'medium', 'high', 'critical'];\nconst confidences = ['high', 'medium', 'low'];\nconst nullableText = (value) =>\n  value === null || (typeof value === 'string' && value.length > 0);\n\nconst validCalendarDate = (year, month, day) => {\n  const date = new Date(0);\n  date.setUTCHours(0, 0, 0, 0);\n  date.setUTCFullYear(year, month - 1, day);\n  return (\n    date.getUTCFullYear() === year &&\n    date.getUTCMonth() === month - 1 &&\n    date.getUTCDate() === day\n  );\n};\n\nconst validIsoDate = (value) => {\n  if (typeof value !== 'string') return false;\n\n  const dateOnly = /^(\\d{4})-(\\d{2})-(\\d{2})$/.exec(value);\n  if (dateOnly) {\n    return validCalendarDate(\n      Number(dateOnly[1]),\n      Number(dateOnly[2]),\n      Number(dateOnly[3])\n    );\n  }\n\n  const dateTime =\n    /^(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2})(?::(\\d{2})(?:\\.\\d+)?)?(Z|[+-](\\d{2}):(\\d{2}))?$/.exec(value);\n\n  if (!dateTime) return false;\n\n  const [, year, month, day, hour, minute, second, , , offsetHour, offsetMinute] =\n    dateTime;\n  if (!validCalendarDate(Number(year), Number(month), Number(day))) return false;\n  if (Number(hour) > 23 || Number(minute) > 59) return false;\n  if (second !== undefined && Number(second) > 59) return false;\n  if (offsetHour !== undefined && Number(offsetHour) > 23) return false;\n  if (offsetMinute !== undefined && Number(offsetMinute) > 59) return false;\n\n  return Number.isFinite(Date.parse(value));\n};\n\nif (!intents.includes(output.intent)) fail();\nif (!nullableText(output.subject)) fail();\nif (!nullableText(output.category)) fail();\nif (!nullableText(output.area)) fail();\nif (output.status !== null && !statuses.includes(output.status)) fail();\nif (\n  output.progress !== null &&\n  (typeof output.progress !== 'number' ||\n    !Number.isFinite(output.progress) ||\n    output.progress < 0 ||\n    output.progress > 100)\n) {\n  fail();\n}\nif (output.severity !== null && !severities.includes(output.severity)) fail();\nif (output.reported_event_at !== null && !validIsoDate(output.reported_event_at)) {\n  fail();\n}\nif (\n  !Array.isArray(output.missing_fields) ||\n  !output.missing_fields.every(\n    (value) => typeof value === 'string' && missingFieldAllowlist.has(value)\n  )\n) {\n  fail();\n}\nif (!confidences.includes(output.extraction_confidence)) fail();\n\nconst final_intent =\n  trusted.explicit_intent === 'UPDATE' || trusted.explicit_intent === 'ALERT'\n    ? trusted.explicit_intent\n    : output.intent;\n\nif (final_intent === 'UPDATE') {\n  if (output.category !== null) fail();\n  if (output.severity !== null) fail();\n}\n\nif (final_intent === 'ALERT') {\n  if (output.status !== null) fail();\n  if (output.progress !== null) fail();\n}\n\nreturn {\n  json: {\n    ...trusted,\n    intent: final_intent,\n    subject: output.subject,\n    category: output.category,\n    area: output.area,\n    status: output.status,\n    progress: output.progress,\n    severity: output.severity,\n    reported_event_at: output.reported_event_at,\n    missing_fields: output.missing_fields.filter((field) =>\n      final_intent === 'UPDATE'\n        ? field !== 'category' && field !== 'severity' && field !== 'reported_event_at'\n        : field !== 'status' && field !== 'progress'\n    ),\n    extraction_confidence: output.extraction_confidence,\n  },\n};"
       },
-      "id": "e32634f2-50be-43e4-a602-07618c021b25",
+      "id": "f23f3edb-42d2-453a-842f-00a34e656b9d",
       "name": "Finalize Extracted Fields",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1274,7 +1274,7 @@
         },
         "options": {}
       },
-      "id": "accedec2-caf3-4e8d-9a3e-da5f2a58413f",
+      "id": "e9e8650b-c793-40f7-a6ed-71e0c32ff321",
       "name": "Register UPDATE",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -1440,7 +1440,7 @@
         },
         "options": {}
       },
-      "id": "8d0c5d2b-c951-4dd4-8253-5eb3403532da",
+      "id": "3a212670-12a8-4afa-bb61-30d2a7311389",
       "name": "Register ALERT Incident",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -1474,7 +1474,7 @@
         },
         "options": {}
       },
-      "id": "f76f81f3-9b5f-4a2c-be47-2eb3fa51ba09",
+      "id": "8bf23cb9-9a79-4c90-a462-cf20916bcc95",
       "name": "Check STATUS Agent Identity",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
@@ -1505,7 +1505,7 @@
         "orderBy": true,
         "orderByColumn": "created_at"
       },
-      "id": "b0f0ef16-a22a-4820-a69f-2b909e0e4be1",
+      "id": "7e60429f-06b4-4067-98a8-6de0549000ed",
       "name": "Get Agent UPDATES",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -1538,7 +1538,7 @@
         "orderBy": true,
         "orderByColumn": "created_at"
       },
-      "id": "ab56ae3d-3092-46cc-8803-83e3cfb49edb",
+      "id": "ff46970b-68b0-4a9d-8017-a51cd73673e7",
       "name": "Get Agent INCIDENTS",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -1551,7 +1551,7 @@
     },
     {
       "parameters": {},
-      "id": "f0210945-95ff-4327-9292-e2e9aba8d7e5",
+      "id": "fa5e9dd7-5035-4519-b601-a81a9f636f16",
       "name": "Merge STATUS Records",
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3.2,
@@ -1601,7 +1601,7 @@
           "dotNotation": true
         }
       },
-      "id": "329e2628-5d19-47f0-8d6c-e7d84542e6bf",
+      "id": "e8ea05ec-bf53-4b0c-986e-b98e90c8556b",
       "name": "Build STATUS Result — Missing Agent",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -1614,7 +1614,7 @@
       "parameters": {
         "jsCode": "const incoming = $input.all();\n\nconst technicalError = (errorCode, sourceMessageId = null) => [{\n  json: {\n    lookup_status: 'technical_error',\n    error_code: errorCode,\n    source_message_id: sourceMessageId,\n    result_count: 0,\n    records: [],\n  },\n}];\n\nconst readFailure = incoming.find((item) => item.json?.read_error === true);\nif (readFailure) {\n  return technicalError(\n    readFailure.json.error_code || 'STATUS_READ_FAILED',\n    readFailure.json.source_message_id ?? null\n  );\n}\n\nconst isMissingAgentMarker = incoming.some((item) =>\n  item.json && item.json.lookup_status === 'agent_identity_missing'\n);\nif (isMissingAgentMarker) {\n  return [{\n    json: {\n      lookup_status: 'agent_identity_missing',\n      agent_id: null,\n      query_text: null,\n      result_count: 0,\n      records: [],\n    },\n  }];\n}\n\n// Use the single parser item as the stable source for this SMS and its\n// authenticated agent. The STATUS table branches converge through a Merge,\n// where branch-local IF output references are not reliably available.\nlet contextItems;\ntry {\n  contextItems = $('Detect Explicit Command').all();\n} catch (error) {\n  return technicalError('STATUS_CONTEXT_UNAVAILABLE');\n}\n\nif (!Array.isArray(contextItems) || contextItems.length !== 1) {\n  return technicalError(\n    contextItems && contextItems.length > 1\n      ? 'STATUS_CONTEXT_AMBIGUOUS'\n      : 'STATUS_CONTEXT_UNAVAILABLE'\n  );\n}\n\nconst context = contextItems[0]?.json;\nconst authenticatedAgent = context?.authenticated_agent;\nconst agentId = authenticatedAgent?.agent_id;\nconst sourceMessageId = context?.message_id;\nconst envelopeMessageId = context?.source_envelope?.message_id;\n\nif (\n  !context ||\n  typeof agentId !== 'string' ||\n  agentId.trim().length === 0 ||\n  context.agent_id !== agentId ||\n  typeof sourceMessageId !== 'string' ||\n  sourceMessageId.trim().length === 0 ||\n  envelopeMessageId !== sourceMessageId\n) {\n  return technicalError(\n    'STATUS_CONTEXT_INVALID',\n    typeof sourceMessageId === 'string' ? sourceMessageId : null\n  );\n}\n\nif (typeof context.remaining_text !== 'string') {\n  return technicalError('STATUS_QUERY_CONTEXT_INVALID', sourceMessageId);\n}\n\nconst queryText = context.remaining_text;\nconst normalize = (value) =>\n  typeof value === 'string'\n    ? value.replace(/\\s+/g, ' ').trim().toLowerCase()\n    : '';\nconst normalizedQuery = normalize(queryText);\n\nconst hasUpdateId = (row) =>\n  row && row.update_id !== undefined && row.update_id !== null;\nconst hasIncidentId = (row) =>\n  row && row.incident_id !== undefined && row.incident_id !== null;\nconst realRows = incoming\n  .map((item) => item.json)\n  .filter((row) =>\n    row &&\n    typeof row === 'object' &&\n    !Array.isArray(row) &&\n    row.id !== undefined &&\n    row.id !== null &&\n    (hasUpdateId(row) || hasIncidentId(row))\n  );\n\nif (realRows.some((row) => row.agent_id !== agentId)) {\n  return technicalError('STATUS_SCOPE_MISMATCH', sourceMessageId);\n}\n\nconst updateRows = realRows\n  .filter(hasUpdateId)\n  .map((row) => ({\n    record_type: 'UPDATE',\n    record_id: row.update_id ?? null,\n    incident_id: row.incident_id ?? null,\n    subject: row.subject ?? null,\n    area: row.area ?? null,\n    department: row.department ?? null,\n    status: row.status ?? null,\n    progress: row.progress ?? null,\n    reported_event_at: row.reported_event_at ?? null,\n    recorded_at: row.created_at ?? null,\n    message: row.message ?? null,\n  }));\n\nconst incidentRows = realRows\n  .filter((row) => !hasUpdateId(row) && hasIncidentId(row))\n  .map((row) => ({\n    record_type: 'INCIDENT',\n    record_id: row.incident_id ?? null,\n    incident_id: row.incident_id ?? null,\n    category: row.category ?? null,\n    subject: row.subject ?? null,\n    area: row.area ?? null,\n    department: row.department ?? null,\n    status: row.status ?? null,\n    severity: row.severity ?? null,\n    reported_event_at: row.reported_event_at ?? null,\n    recorded_at: row.created_at ?? row.updated_at ?? null,\n    description: row.description ?? null,\n  }));\n\nlet records = [...updateRows, ...incidentRows];\nif (normalizedQuery.length > 0) {\n  records = records.filter((record) =>\n    [record.incident_id, record.subject, record.area].some(\n      (value) => normalize(value) === normalizedQuery\n    )\n  );\n}\n\nconst timeValue = (value) => {\n  const parsed = typeof value === 'string' ? Date.parse(value) : NaN;\n  return Number.isFinite(parsed) ? parsed : 0;\n};\nrecords.sort((a, b) =>\n  timeValue(b.recorded_at) - timeValue(a.recorded_at) ||\n  a.record_type.localeCompare(b.record_type) ||\n  String(a.record_id ?? '').localeCompare(String(b.record_id ?? ''))\n);\n\nconst selected = records.slice(0, 5);\nreturn [{\n  json: {\n    lookup_status: selected.length > 0 ? 'results_found' : 'no_results',\n    agent_id: agentId,\n    query_text: queryText || null,\n    result_count: selected.length,\n    records: selected,\n  },\n}];"
       },
-      "id": "f0d7bf57-ba84-4703-b1a0-421a024b6ffc",
+      "id": "a8f65719-e325-4103-8cdf-99ca22c52d4f",
       "name": "Format STATUS Results",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1647,7 +1647,7 @@
         },
         "options": {}
       },
-      "id": "9d89084b-5b40-4bf9-ab1c-632a05c4a202",
+      "id": "9c22ba88-b3fc-4f84-801f-b7bdb8aad466",
       "name": "Check BRIEF Agent Identity",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
@@ -1677,7 +1677,7 @@
         "orderBy": true,
         "orderByColumn": "created_at"
       },
-      "id": "dc110961-a7d3-45e8-8df1-7c7f9d6af863",
+      "id": "4ab5cfc0-0d3c-4b03-a287-5ea147dd9dd8",
       "name": "Get BRIEF UPDATES",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -1709,7 +1709,7 @@
         "orderBy": true,
         "orderByColumn": "created_at"
       },
-      "id": "5cd0b40c-0a7b-4504-b6da-b7a113b0ab5d",
+      "id": "c529d3af-a53d-4107-a48b-85e14d141e91",
       "name": "Get BRIEF INCIDENTS",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -1722,7 +1722,7 @@
     },
     {
       "parameters": {},
-      "id": "fcd7c163-2073-4b0c-88b4-de72699fcf6e",
+      "id": "7601e780-888f-48f3-b930-a7b992cbd829",
       "name": "Merge BRIEF Records",
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3.2,
@@ -1735,7 +1735,7 @@
       "parameters": {
         "jsCode": "const incoming = $input.all();\nconst readFailure = incoming.find((item) => item.json?.read_error === true);\nif (readFailure) {\n  return [{ json: {\n    brief_status: 'technical_error',\n    error_code: 'BRIEF_READ_FAILED',\n    source_message_id: readFailure.json.source_message_id ?? null,\n    response_available: false,\n  } }];\n}\nconst agentItem = $('Check BRIEF Agent Identity').first();\nconst identity = agentItem && agentItem.json ? agentItem.json : {};\nconst agentId = typeof identity.agent_id === 'string' ? identity.agent_id : '';\nif (agentId.trim().length === 0) {\n  return [{ json: { brief_status: 'agent_identity_missing', response_available: false } }];\n}\n\nconst rows = incoming\n  .map((item) => item && item.json && typeof item.json === 'object' ? item.json : null)\n  .filter((row) => row && row.id !== undefined && row.id !== null && row.agent_id === agentId);\n\nconst records = [];\nfor (const row of rows) {\n  if (typeof row.update_id === 'string' && row.update_id.length > 0) {\n    records.push({\n      record_type: 'UPDATE',\n      record_id: row.update_id,\n      subject: row.subject ?? null,\n      area: row.area ?? null,\n      department: row.department ?? null,\n      state: row.status ?? null,\n      progress: row.progress ?? null,\n      reported_event_at: row.reported_event_at ?? null,\n      created_at: row.created_at ?? null,\n    });\n  } else if (typeof row.incident_id === 'string' && row.incident_id.length > 0) {\n    records.push({\n      record_type: 'ALERT',\n      record_id: row.incident_id,\n      category: row.category ?? null,\n      subject: row.subject ?? null,\n      area: row.area ?? null,\n      department: row.department ?? null,\n      state: row.status ?? null,\n      severity: row.severity ?? null,\n      reported_event_at: row.reported_event_at ?? null,\n      created_at: row.created_at ?? null,\n    });\n  }\n}\n\nconst timestamp = (value) => {\n  if (typeof value !== 'string' || value.trim().length === 0) return null;\n  const parsed = Date.parse(value);\n  return Number.isFinite(parsed) ? parsed : null;\n};\nrecords.sort((a, b) => {\n  const timeA = timestamp(a.created_at);\n  const timeB = timestamp(b.created_at);\n  if (timeA === null && timeB !== null) return 1;\n  if (timeA !== null && timeB === null) return -1;\n  if (timeA !== null && timeB !== null && timeA !== timeB) return timeB - timeA;\n  return a.record_type.localeCompare(b.record_type) || String(a.record_id).localeCompare(String(b.record_id));\n});\n\nconst retained = records.slice(0, 10);\nconst updates = retained.filter((record) => record.record_type === 'UPDATE');\nconst alerts = retained.filter((record) => record.record_type === 'ALERT');\nconst incidentStatusCounts = { reported: 0, acknowledged: 0, resolved: 0, unclassified: 0 };\nfor (const incident of alerts) {\n  if (Object.prototype.hasOwnProperty.call(incidentStatusCounts, incident.state)) {\n    incidentStatusCounts[incident.state] += 1;\n  } else {\n    incidentStatusCounts.unclassified += 1;\n  }\n}\nconst highSeverityIncidents = alerts\n  .filter((incident) => incident.severity === 'high' || incident.severity === 'critical')\n  .map((incident) => ({\n    incident_id: incident.record_id,\n    category: incident.category,\n    subject: incident.subject,\n    area: incident.area,\n    severity: incident.severity,\n    state: incident.state,\n    created_at: incident.created_at,\n  }));\nconst latestEvents = retained.slice(0, 3).map((record) => ({\n  type: record.record_type,\n  date: record.created_at,\n  reported_event_at: record.reported_event_at,\n  subject: record.subject,\n  area: record.area,\n  state: record.state,\n  ...(record.record_type === 'UPDATE' ? { progress: record.progress } : { severity: record.severity }),\n}));\nconst scopeStatement = 'Résumé limité aux 10 enregistrements les plus récents de cet agent (ou à ceux disponibles s’il y en a moins), et non à l’ensemble du territoire.';\nreturn [{ json: {\n  brief_status: retained.length > 0 ? 'ready' : 'no_activity',\n  response_available: true,\n  agent_id: agentId,\n  scope: 'agent_latest_10_records',\n  scope_statement: scopeStatement,\n  record_count: retained.length,\n  update_count: updates.length,\n  alert_count: alerts.length,\n  incident_status_counts: incidentStatusCounts,\n  high_severity_incidents: highSeverityIncidents,\n  latest_events: latestEvents,\n} }];"
       },
-      "id": "2580065a-a461-4c3f-9ccb-aa2f5f14ec04",
+      "id": "b0f3ea6c-616a-4366-9194-83608a4aee18",
       "name": "Build BRIEF Summary",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1768,7 +1768,7 @@
           "dotNotation": true
         }
       },
-      "id": "9d6f9f2e-b591-42f4-9a29-4de17e06b23e",
+      "id": "59afe74f-ec97-493c-b468-50114b71cede",
       "name": "Build BRIEF Result — Missing Agent",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -1800,7 +1800,7 @@
         },
         "returnAll": true
       },
-      "id": "d523ad34-c775-431c-ab04-34881f50d914",
+      "id": "63913a7b-0dbf-418c-ae52-e73cdebafac4",
       "name": "Get Active ALERT Routing Rules",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -1815,7 +1815,7 @@
       "parameters": {
         "jsCode": "const firstJson = (nodeName) => {\n  const item = $(nodeName).first();\n  return item && item.json && typeof item.json === 'object' ? item.json : {};\n};\nconst normalize = (value) => typeof value === 'string' ? value.trim().toLowerCase() : '';\n\nconst inserted = firstJson('Register ALERT Incident');\nconst extracted = firstJson('Finalize Extracted Fields');\nconst agent = firstJson('Find Agent');\nconst envelope = firstJson('Normalize Envelope');\nconst inboundMessage = firstJson('Register Inbound Message');\nconst rawInsertedId = typeof inserted.incident_id === 'string' ? inserted.incident_id.trim() : '';\nconst inboundRowId = inboundMessage.id;\nconst fallbackIncidentId = inboundRowId !== undefined && inboundRowId !== null && String(inboundRowId).length > 0\n  ? 'INC-' + String(inboundRowId).padStart(4, '0')\n  : null;\nconst incident = {\n  incident_id: rawInsertedId || fallbackIncidentId,\n  source_message_id: inserted.source_message_id ?? envelope.message_id ?? null,\n  agent_id: inserted.agent_id ?? agent.agent_id ?? null,\n  department: inserted.department ?? agent.department ?? null,\n  category: inserted.category ?? extracted.category ?? null,\n  area: inserted.area ?? extracted.area ?? null,\n  subject: inserted.subject ?? extracted.subject ?? null,\n  severity: inserted.severity ?? extracted.severity ?? null,\n  description: inserted.description ?? envelope.text ?? null,\n  status: inserted.status ?? 'reported',\n  reported_event_at: inserted.reported_event_at ?? extracted.reported_event_at ?? null,\n  created_at: inserted.created_at ?? inserted.createdAt ?? null,\n};\n\nconst rank = { low: 1, medium: 2, high: 3, critical: 4 };\nconst severityMatches = (rule, severityValue) => {\n  const severity = normalize(severityValue);\n  const incidentRank = rank[severity];\n  if (!incidentRank) return rule.include_unknown_severity === true;\n  const minimum = normalize(rule.minimum_severity);\n  if (!minimum) return true;\n  const minimumRank = rank[minimum];\n  return minimumRank !== undefined && incidentRank >= minimumRank;\n};\nconst dimensionMatches = (ruleValue, actualValue) => {\n  const rule = normalize(ruleValue);\n  if (!rule || rule === 'all') return true;\n  const actual = normalize(actualValue);\n  return actual.length > 0 && rule === actual;\n};\nconst rules = $input.all()\n  .map((item) => item && item.json && typeof item.json === 'object' ? item.json : null)\n  .filter((rule) => rule && rule.id !== undefined && rule.id !== null && rule.message_type === 'ALERT' && rule.active === true);\n\nconst matchingRules = rules.filter((rule) =>\n  dimensionMatches(rule.source_department, incident.department) &&\n  dimensionMatches(rule.category, incident.category) &&\n  dimensionMatches(rule.area, incident.area) &&\n  severityMatches(rule, incident.severity)\n);\nconst matchedRules = matchingRules.map((rule) => ({\n  rule_id: rule.rule_id ?? null,\n  department_to_notify: typeof rule.department_to_notify === 'string' && rule.department_to_notify.trim().length > 0\n    ? rule.department_to_notify.trim()\n    : null,\n}));\nconst recipientsByKey = new Map();\nfor (const rule of matchedRules) {\n  if (typeof rule.department_to_notify !== 'string' || rule.department_to_notify.length === 0) continue;\n  const key = normalize(rule.department_to_notify);\n  if (key && !recipientsByKey.has(key)) recipientsByKey.set(key, rule.department_to_notify);\n}\nconst recipientDepartments = Array.from(recipientsByKey.values());\nconst routingStatus = matchingRules.length === 0\n  ? 'no_matching_rules'\n  : recipientDepartments.length === 0\n    ? 'no_recipient_identified'\n    : 'recipients_identified';\nreturn [{ json: {\n  routing_status: incident.incident_id ? routingStatus : 'incident_id_missing',\n  incident,\n  recipient_departments: incident.incident_id ? recipientDepartments : [],\n  matched_rule_count: matchingRules.length,\n  matched_rules: matchedRules,\n} }];"
       },
-      "id": "abc12a82-932a-44dd-8ee0-f7ec016e98b2",
+      "id": "e5982d66-093f-4206-8f7a-8a61fbd19487",
       "name": "Select ALERT Recipients",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1829,7 +1829,7 @@
       "parameters": {
         "jsCode": "const incoming = $input.all();\nif (!incoming.length) return [];\nconst savedUpdate = incoming[0].json ?? {};\nconst agent = $('Find Agent').first()?.json ?? {};\nconst envelope = $('Normalize Envelope').first()?.json ?? {};\nconst inbound = $('Register Inbound Message').first()?.json ?? {};\nconst sourceMessageId = typeof envelope.message_id === 'string' ? envelope.message_id : '';\nconst sourceKey = typeof envelope.idempotency_key === 'string' ? envelope.idempotency_key : '';\nconst phoneFrom = typeof envelope.phone_to === 'string' ? envelope.phone_to.trim() : '';\nconst phoneTo = typeof agent.phone === 'string' ? agent.phone.trim() : '';\nif (savedUpdate.id === undefined || savedUpdate.id === null ||\n    typeof agent.agent_id !== 'string' || agent.agent_id.trim().length === 0 ||\n    sourceMessageId.trim().length === 0 || sourceKey.trim().length === 0 ||\n    phoneFrom.length === 0 || phoneTo.length === 0) return [];\n\nconst exceedsTwoSegments = (value) => {\n  let chars = Array.from(value);\n  const units = (items) => items.reduce((total, character) => total + character.length, 0);\n  let chunks = 0;\n  while (units(chars) > 55) {\n    let used = 0;\n    let end = 0;\n    let lastWhitespaceBoundary = 0;\n    while (end < chars.length && used + chars[end].length <= 55) {\n      used += chars[end].length;\n      end += 1;\n      if (/\\s/u.test(chars[end - 1])) lastWhitespaceBoundary = end;\n    }\n    const cut = lastWhitespaceBoundary > 0 ? lastWhitespaceBoundary : end;\n    if (cut <= 0) throw new Error('Unable to estimate SMS segments safely.');\n    chars = chars.slice(cut);\n    chunks += 1;\n    if (chunks >= 2) return true;\n  }\n  return false;\n};\nconst addLengthNotice = (value) =>\n  exceedsTwoSegments(value)\n    ? 'AVIS: réponse >2 SMS; contenu intégral suit: ' + value\n    : value;\n\nconst updateId = 'UPD-' + sourceMessageId;\nconst text = addLengthNotice(updateId + ' enregistré.');\nreturn [{ json: { payload: {\n  message_id: 'outbound:' + sourceMessageId + ':UPDATE:confirmation',\n  idempotency_key: sourceKey + ':outbound:update:confirmation',\n  correlation_id: typeof envelope.correlation_id === 'string' ? envelope.correlation_id : '',\n  phone_from: phoneFrom,\n  phone_to: phoneTo,\n  text,\n  intent: 'UPDATE',\n  unaddressed_notifications: [],\n} } }];"
       },
-      "id": "9ab6a1c8-b2f5-4346-ae25-1794beb758b4",
+      "id": "e01f5580-0209-43f2-8f70-1d07ffc83665",
       "name": "Prepare UPDATE SMS Payload",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1843,7 +1843,7 @@
       "parameters": {
         "jsCode": "const incoming = $input.all();\nif (!incoming.length) return [];\nconst routing = incoming[0].json ?? {};\nconst incident = routing.incident && typeof routing.incident === 'object' ? routing.incident : {};\nconst agent = $('Find Agent').first()?.json ?? {};\nconst envelope = $('Normalize Envelope').first()?.json ?? {};\nconst incidentId = typeof incident.incident_id === 'string' ? incident.incident_id.trim() : '';\nconst sourceMessageId = typeof envelope.message_id === 'string' ? envelope.message_id : '';\nconst sourceKey = typeof envelope.idempotency_key === 'string' ? envelope.idempotency_key : '';\nconst phoneFrom = typeof envelope.phone_to === 'string' ? envelope.phone_to.trim() : '';\nconst phoneTo = typeof agent.phone === 'string' ? agent.phone.trim() : '';\nif (incidentId.length === 0 || sourceMessageId.trim().length === 0 || sourceKey.trim().length === 0 ||\n    typeof agent.agent_id !== 'string' || agent.agent_id.trim().length === 0 ||\n    phoneFrom.length === 0 || phoneTo.length === 0) return [];\n\nconst exceedsTwoSegments = (value) => {\n  let chars = Array.from(value);\n  const units = (items) => items.reduce((total, character) => total + character.length, 0);\n  let chunks = 0;\n  while (units(chars) > 55) {\n    let used = 0;\n    let end = 0;\n    let lastWhitespaceBoundary = 0;\n    while (end < chars.length && used + chars[end].length <= 55) {\n      used += chars[end].length;\n      end += 1;\n      if (/\\s/u.test(chars[end - 1])) lastWhitespaceBoundary = end;\n    }\n    const cut = lastWhitespaceBoundary > 0 ? lastWhitespaceBoundary : end;\n    if (cut <= 0) throw new Error('Unable to estimate SMS segments safely.');\n    chars = chars.slice(cut);\n    chunks += 1;\n    if (chunks >= 2) return true;\n  }\n  return false;\n};\nconst addLengthNotice = (value) =>\n  exceedsTwoSegments(value)\n    ? 'AVIS: réponse >2 SMS; contenu intégral suit: ' + value\n    : value;\n\nconst recipients = Array.isArray(routing.recipient_departments) ? routing.recipient_departments : [];\nconst matchedRules = Array.isArray(routing.matched_rules) ? routing.matched_rules : [];\nconst unaddressed = recipients\n  .filter((department) => typeof department === 'string' && department.trim().length > 0)\n  .map((department) => ({\n    department: department.trim(),\n    incident_id: incidentId,\n    rule_ids: matchedRules\n      .filter((rule) => typeof rule?.department_to_notify === 'string' &&\n        rule.department_to_notify.trim().toLowerCase() === department.trim().toLowerCase())\n      .map((rule) => rule.rule_id)\n      .filter((ruleId) => typeof ruleId === 'string' && ruleId.length > 0),\n    reason: 'exact_recipient_phone_not_available_in_alert_branch_output',\n  }));\nconst text = addLengthNotice(incidentId + ' enregistré.');\nreturn [{ json: { payload: {\n  message_id: 'outbound:' + sourceMessageId + ':ALERT:confirmation',\n  idempotency_key: sourceKey + ':outbound:alert:confirmation',\n  correlation_id: typeof envelope.correlation_id === 'string' ? envelope.correlation_id : '',\n  phone_from: phoneFrom,\n  phone_to: phoneTo,\n  text,\n  intent: 'ALERT',\n  unaddressed_notifications: unaddressed,\n  alert_routing_status: typeof routing.routing_status === 'string' ? routing.routing_status : 'unknown',\n} } }];"
       },
-      "id": "e6c39363-c6d1-4c49-9899-2bc4e41a4c1c",
+      "id": "8812c73f-59e7-4629-8bd0-5f338169b973",
       "name": "Prepare ALERT SMS Payload",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1857,7 +1857,7 @@
       "parameters": {
         "jsCode": "const incoming = $input.all();\nif (!incoming.length) return [];\nconst result = incoming[0].json ?? {};\nif (result.lookup_status === 'technical_error') throw new Error('STATUS_READ_FAILED');\nconst agent = $('Find Agent').first()?.json ?? {};\nconst envelope = $('Normalize Envelope').first()?.json ?? {};\nif (result.lookup_status === 'agent_identity_missing' ||\n    typeof agent.agent_id !== 'string' || agent.agent_id.trim().length === 0) return [];\nconst sourceMessageId = typeof envelope.message_id === 'string' ? envelope.message_id : '';\nconst sourceKey = typeof envelope.idempotency_key === 'string' ? envelope.idempotency_key : '';\nconst phoneFrom = typeof envelope.phone_to === 'string' ? envelope.phone_to.trim() : '';\nconst phoneTo = typeof agent.phone === 'string' ? agent.phone.trim() : '';\nif (sourceMessageId.trim().length === 0 || sourceKey.trim().length === 0 ||\n    phoneFrom.length === 0 || phoneTo.length === 0) return [];\nconst records = Array.isArray(result.records)\n  ? result.records.filter((record) => record && typeof record === 'object')\n  : [];\n\nconst exceedsTwoSegments = (value) => {\n  let chars = Array.from(value);\n  const units = (items) => items.reduce((total, character) => total + character.length, 0);\n  let chunks = 0;\n  while (units(chars) > 55) {\n    let used = 0;\n    let end = 0;\n    let lastWhitespaceBoundary = 0;\n    while (end < chars.length && used + chars[end].length <= 55) {\n      used += chars[end].length;\n      end += 1;\n      if (/\\s/u.test(chars[end - 1])) lastWhitespaceBoundary = end;\n    }\n    const cut = lastWhitespaceBoundary > 0 ? lastWhitespaceBoundary : end;\n    if (cut <= 0) throw new Error('Unable to estimate SMS segments safely.');\n    chars = chars.slice(cut);\n    chunks += 1;\n    if (chunks >= 2) return true;\n  }\n  return false;\n};\nconst addLengthNotice = (value) =>\n  exceedsTwoSegments(value)\n    ? 'AVIS: réponse >2 SMS; contenu intégral suit: ' + value\n    : value;\n\nlet text;\nif (result.lookup_status === 'no_results' || records.length === 0) {\n  text = 'STATUS: aucun résultat.';\n} else {\n  const record = records[0];\n  const label = record.record_type === 'INCIDENT' ? 'ALERT' : 'UPDATE';\n  const recordId = typeof record.record_id === 'string' ? record.record_id : '';\n  const parts = [label + (recordId ? ' ' + recordId : '')];\n  if (typeof record.subject === 'string' && record.subject.trim().length > 0) parts.push(record.subject);\n  if (typeof record.area === 'string' && record.area.trim().length > 0) parts.push('zone ' + record.area);\n  if (typeof record.status === 'string' && record.status.length > 0) parts.push('état ' + record.status);\n  if (typeof record.progress === 'number') parts.push(record.progress + '%');\n  if (typeof record.severity === 'string' && record.severity.length > 0) parts.push('sévérité ' + record.severity);\n\n  text = 'STATUS ' + parts.join(' | ');\n  const otherCount = Math.max(0, records.length - 1);\n  if (otherCount > 0) {\n    text += '; +' + otherCount + ' autres trouvés';\n    if (records.length === 5) text += ' (5 max affichés; total peut dépasser)';\n    text += '.';\n  } else {\n    text += '; aucun autre résultat trouvé.';\n  }\n}\ntext = addLengthNotice(text);\nreturn [{ json: { payload: {\n  message_id: 'outbound:' + sourceMessageId + ':STATUS:reply',\n  idempotency_key: sourceKey + ':outbound:status:reply',\n  correlation_id: typeof envelope.correlation_id === 'string' ? envelope.correlation_id : '',\n  phone_from: phoneFrom,\n  phone_to: phoneTo,\n  text,\n  intent: 'STATUS',\n  unaddressed_notifications: [],\n} } }];"
       },
-      "id": "e2e996e6-6cf9-4de4-961b-2cd42504c3fe",
+      "id": "d3bde2a2-09ac-4eeb-a02a-5d641af4b5d1",
       "name": "Prepare STATUS SMS Payload",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1872,7 +1872,7 @@
       "parameters": {
         "jsCode": "const incoming = $input.all();\nif (!incoming.length) return [];\nconst brief = incoming[0].json ?? {};\nconst agent = $('Find Agent').first()?.json ?? {};\nconst envelope = $('Normalize Envelope').first()?.json ?? {};\nif (brief.brief_status === 'agent_identity_missing' ||\n    typeof agent.agent_id !== 'string' || agent.agent_id.trim().length === 0) return [];\nconst sourceMessageId = typeof envelope.message_id === 'string' ? envelope.message_id : '';\nconst sourceKey = typeof envelope.idempotency_key === 'string' ? envelope.idempotency_key : '';\nconst phoneFrom = typeof envelope.phone_to === 'string' ? envelope.phone_to.trim() : '';\nconst phoneTo = typeof agent.phone === 'string' ? agent.phone.trim() : '';\nif (sourceMessageId.trim().length === 0 || sourceKey.trim().length === 0 ||\n    phoneFrom.length === 0 || phoneTo.length === 0) return [];\n\nconst recordCount = Number.isInteger(brief.record_count)\n  ? Math.max(0, Math.min(10, brief.record_count))\n  : 0;\nlet text;\nif (brief.brief_status === 'no_activity') {\n  text = 'BRIEF agent: aucune activité (' + recordCount + '/10).';\n} else {\n  const counts = brief.incident_status_counts && typeof brief.incident_status_counts === 'object'\n    ? brief.incident_status_counts\n    : {};\n  const updates = Number.isInteger(brief.update_count) ? brief.update_count : 0;\n  const alerts = Number.isInteger(brief.alert_count) ? brief.alert_count : 0;\n  const reported = Number.isInteger(counts.reported) ? counts.reported : 0;\n  const acknowledged = Number.isInteger(counts.acknowledged) ? counts.acknowledged : 0;\n  const resolved = Number.isInteger(counts.resolved) ? counts.resolved : 0;\n  const unclassified = Number.isInteger(counts.unclassified) ? counts.unclassified : 0;\n  const highSeverity = Array.isArray(brief.high_severity_incidents)\n    ? brief.high_severity_incidents\n    : [];\n  const highCount = highSeverity.length;\n  const coreText = 'BRIEF agent ' + recordCount + '/10: U' + updates + ' A' + alerts +\n    '; graves' + highCount + '.';\n  const withStatuses = 'BRIEF agent ' + recordCount + '/10: U' + updates + ' A' + alerts +\n    '; graves' + highCount + '; inc sig' + reported + ' ack' + acknowledged +\n    ' rés' + resolved + (unclassified > 0 ? ' ?' + unclassified : '') + '.';\n  text = withStatuses.length <= 55 ? withStatuses : coreText;\n}\nif (typeof text !== 'string' || text.length > 55) {\n  throw new Error('BRIEF_COMPACT_REPLY_EXCEEDS_SINGLE_SEGMENT_BUDGET');\n}\nreturn [{ json: { payload: {\n  message_id: 'outbound:' + sourceMessageId + ':BRIEF:reply',\n  idempotency_key: sourceKey + ':outbound:brief:reply',\n  correlation_id: typeof envelope.correlation_id === 'string' ? envelope.correlation_id : '',\n  phone_from: phoneFrom,\n  phone_to: phoneTo,\n  text,\n  intent: 'BRIEF',\n  unaddressed_notifications: [],\n} } }];"
       },
-      "id": "06ba74a2-8052-4a69-9c8f-8784c16a9935",
+      "id": "33aaef87-0730-42e2-b5f4-7fc38222211d",
       "name": "Prepare BRIEF SMS Payload",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1895,7 +1895,7 @@
           "waitForSubWorkflow": true
         }
       },
-      "id": "dfbc9660-483c-4903-9331-6258e58b028d",
+      "id": "2ad23159-c958-414f-a416-bf2ab1d3c686",
       "name": "Execute UPDATE SMS Reply",
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.4,
@@ -1918,7 +1918,7 @@
           "waitForSubWorkflow": true
         }
       },
-      "id": "5e3beb69-0f7a-4045-9af2-3bf3e6ab1a36",
+      "id": "1764d94c-510c-403f-abd6-fe92907039d6",
       "name": "Execute ALERT SMS Reply",
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.4,
@@ -1941,7 +1941,7 @@
           "waitForSubWorkflow": true
         }
       },
-      "id": "78f74f90-ecd5-452e-a466-a75260e27d65",
+      "id": "aae05954-545d-45ba-97f7-d85b295c582b",
       "name": "Execute STATUS SMS Reply",
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.4,
@@ -1964,7 +1964,7 @@
           "waitForSubWorkflow": true
         }
       },
-      "id": "4bc85978-dafc-47e9-b68d-43cb105832bf",
+      "id": "bb7223f3-fdc8-41ca-b2b6-e12fae8118b1",
       "name": "Execute BRIEF SMS Reply",
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.4,
@@ -1980,7 +1980,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "return { json: {\n  result_status: 'technical_error',\n  error_code: 'UPDATE_WRITE_FAILED',\n  source_message_id: $('Normalize Envelope').first().json.message_id ?? null,\n  success_confirmation: false,\n  safe_message: 'Le rapport n’a pas pu être enregistré. Réessayez plus tard.',\n} };"
       },
-      "id": "17d6ee73-a681-4b7e-9831-2ee380dd353e",
+      "id": "740d7570-522a-4fd1-a4d7-3e77f1e9a468",
       "name": "Return UPDATE Write Error",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -1994,7 +1994,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "return { json: {\n  result_status: 'technical_error',\n  error_code: 'ALERT_WRITE_FAILED',\n  source_message_id: $('Normalize Envelope').first().json.message_id ?? null,\n  success_confirmation: false,\n  safe_message: 'Le signalement n’a pas pu être enregistré. Réessayez plus tard.',\n} };"
       },
-      "id": "5a181aa6-c75c-4231-9f95-70a0246d6835",
+      "id": "9464dd9c-b2f6-4f00-81a6-ce25f9b0a396",
       "name": "Return ALERT Write Error",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -2008,7 +2008,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "const result = $('Format STATUS Results').first()?.json ?? {};\nconst envelope = $('Normalize Envelope').first()?.json ?? {};\nconst readFailed = result.lookup_status === 'technical_error';\nreturn { json: {\n  result_status: 'technical_error',\n  error_code: readFailed ? 'STATUS_READ_FAILED' : 'STATUS_RESPONSE_PREPARATION_FAILED',\n  source_message_id: result.source_message_id ?? envelope.message_id ?? null,\n  success_confirmation: false,\n  safe_message: readFailed ? 'La consultation est temporairement indisponible. Réessayez plus tard.' : 'La réponse STATUS n’a pas pu être préparée. Réessayez plus tard.',\n} };"
       },
-      "id": "b73f58d9-b524-491b-a8f8-0491ca9cd89e",
+      "id": "ffd3dd52-d649-4418-8d3b-fb037df7a7be",
       "name": "Return STATUS Technical Error",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -2022,7 +2022,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "const result = $('Build BRIEF Summary').first()?.json ?? {};\nconst envelope = $('Normalize Envelope').first()?.json ?? {};\nconst readFailed = result.brief_status === 'technical_error';\nreturn { json: {\n  result_status: 'technical_error',\n  error_code: readFailed ? 'BRIEF_READ_FAILED' : 'BRIEF_RESPONSE_PREPARATION_FAILED',\n  source_message_id: result.source_message_id ?? envelope.message_id ?? null,\n  success_confirmation: false,\n  safe_message: readFailed ? 'Le résumé est temporairement indisponible. Réessayez plus tard.' : 'La réponse BRIEF n’a pas pu être préparée. Réessayez plus tard.',\n} };"
       },
-      "id": "24fde38c-0a1d-4cea-9a8a-4a6aa8e0b7c8",
+      "id": "59803f1b-7139-4a1c-bafe-349988c1eb51",
       "name": "Return BRIEF Technical Error",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -2036,7 +2036,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "return { json: {\n  result_status: 'technical_error',\n  error_code: 'SMS_SUBWORKFLOW_FAILED',\n  source_message_id: $('Normalize Envelope').first().json.message_id ?? null,\n  success_confirmation: false,\n  safe_message: 'La réponse simulée n’a pas pu être préparée. Réessayez plus tard.',\n} };"
       },
-      "id": "2523b232-1532-45b7-93c9-20fc5a3cb3c3",
+      "id": "b102fe85-02f7-4dd0-be68-2720f1fe9ca0",
       "name": "Return SMS Sub-workflow Error",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -2074,7 +2074,7 @@
           "dotNotation": true
         }
       },
-      "id": "e6d1fe36-7767-4673-8701-93a722d6cb58",
+      "id": "2c3fe2d4-c637-4950-aa8b-1370d6cdf239",
       "name": "Mark STATUS UPDATES Read Error",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -2112,7 +2112,7 @@
           "dotNotation": true
         }
       },
-      "id": "96b2c915-d682-4323-a8a5-26d377f8cebc",
+      "id": "72aa8783-e937-4f04-adcf-d860086d97d0",
       "name": "Mark STATUS INCIDENTS Read Error",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -2150,7 +2150,7 @@
           "dotNotation": true
         }
       },
-      "id": "82f9ff12-f608-47d0-80e5-954abdb28c5b",
+      "id": "23c7f518-1a96-4122-8623-400f32a035f7",
       "name": "Mark BRIEF UPDATES Read Error",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -2188,7 +2188,7 @@
           "dotNotation": true
         }
       },
-      "id": "b0f934b2-2f45-488e-9ecd-d18431221b85",
+      "id": "cd09e30d-76e3-499d-b2b5-b1478f3a321b",
       "name": "Mark BRIEF INCIDENTS Read Error",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -2204,7 +2204,7 @@
         "width": 804,
         "color": "#FFFFFF"
       },
-      "id": "e6df981b-beb3-432f-a3a6-62739a5fb8ee",
+      "id": "3e58e0ef-a707-4008-b795-963cd33af702",
       "name": "Command routing",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
@@ -2220,7 +2220,7 @@
         "width": 1480,
         "color": "#FFFFFF"
       },
-      "id": "ba2b56dc-1d8b-41f3-84ed-d28f1d56db6e",
+      "id": "6fd82f45-b47e-430e-b01e-1088ad9997f9",
       "name": "UPDATE and ALERT branches",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
@@ -2236,7 +2236,7 @@
         "width": 1744,
         "color": "#FFFFFF"
       },
-      "id": "6e9f04b1-84ad-407c-ac80-9738937e1c0a",
+      "id": "6a0d29c4-a9e1-4913-ba6c-f00e1033da7f",
       "name": "STATUS and BRIEF branches",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
@@ -2257,7 +2257,7 @@
         0
       ],
       "typeVersion": 1,
-      "id": "220210f4-10b4-41bf-b3f0-ae5af362cab9",
+      "id": "1f9482b6-7e02-4e21-a880-c6b72d8a8f67",
       "name": "Sticky Note"
     },
     {
@@ -2273,13 +2273,13 @@
         1168
       ],
       "typeVersion": 1,
-      "id": "455cef7a-d5bc-414e-a745-f324e70e0caf",
+      "id": "1e6545a5-9daa-4b0e-8097-f99aaad457f9",
       "name": "Sticky Note1"
     },
     {
       "parameters": {
-        "content": "# SETUP — Data Tables & Connections\n\nThe five Data Tables represent a demonstration reporting system for local government field staff, public service activities, incidents, and departmental routing.\n\n## 1. Create the Data Tables\n\nIn n8n, go to **Data tables → Create Data table → From scratch**.\n\nCreate these five tables:\n\n- **AGENTS** — 8 columns: authorized field agents.\n- **UPDATES** — 17 columns: activity reports.\n- **INCIDENTS** — 14 columns: incident records.\n- **ROUTING_RULES** — 10 columns: department routing.\n- **MESSAGES** — 16 columns: incoming and simulated outgoing SMS.\n\nUse the exact column names and types provided in the companion `SETUP.md`.\n\nDo not recreate n8n's automatic system columns: `id`, `createdAt`, and `updatedAt`.\n\n## 2. Connect the tables to Main\n\nOpen each Data Table node and select the corresponding table:\n\n**AGENTS**\n- Find Agent\n\n**UPDATES**\n- Register UPDATE\n- Get Agent UPDATES\n- Get BRIEF UPDATES\n\n**INCIDENTS**\n- Register ALERT Incident\n- Get Agent INCIDENTS\n- Get BRIEF INCIDENTS\n\n**ROUTING_RULES**\n- Get Active ALERT Routing Rules\n\n**MESSAGES**\n- Find Existing Message\n- Register Inbound Message\n\n## 3. Set up the Send SMS workflow\n\nThis template includes Main and Send SMS on the same canvas.\n\nTo make the SMS responses work:\n\n1. Select all nodes in the **Send SMS** section, including `Execute Sub-workflow Trigger`.\n2. Copy them into a new n8n workflow.\n3. Name it **SMS Territorial Operations Hub - Send SMS** and save it.\n4. Connect its three Data Table nodes to your MESSAGES table.\n5. Return to Main and open these four nodes:\n   - `Execute UPDATE SMS Reply`\n   - `Execute ALERT SMS Reply`\n   - `Execute STATUS SMS Reply`\n   - `Execute BRIEF SMS Reply`\n6. Select the new Send SMS workflow in each node.\n\nSave your changes and keep both workflows inactive during setup.\n\n**Important:** The Send SMS section shown on the combined canvas is for reference. It must be saved as a separate workflow before Main can call it.\n\n## 4. Prepare demo data\n\nAdd the fictional test agent to **AGENTS** and the example ALERT rule to **ROUTING_RULES**, using the values in `SETUP.md`.\n\n## 5. Final checks\n\n- [ ] All Data Table nodes are connected.\n- [ ] All four Send SMS calls are connected.\n- [ ] OpenAI Chat Model uses your own credential.\n- [ ] Both workflows remain inactive.\n\n**Important:** Importing the JSON does not automatically create Data Tables or connect resources from another n8n instance.",
-        "height": 1424,
+        "content": "# SETUP — Data Tables & Connections\n\nThe five Data Tables represent a demonstration reporting system for local government field staff, public service activities, incidents, and departmental routing.\n\n## 1. Create the Data Tables\n\nIn n8n, go to **Data tables → Create Data table → From scratch**.\n\nCreate these five tables:\n\n- **AGENTS** — 8 columns: authorized field agents.\n- **UPDATES** — 17 columns: activity reports.\n- **INCIDENTS** — 14 columns: incident records.\n- **ROUTING_RULES** — 10 columns: department routing.\n- **MESSAGES** — 16 columns: incoming and simulated outgoing SMS.\n\nUse the exact column names and types provided in the companion `SETUP.md`.\n\nDo not recreate n8n's automatic system columns: `id`, `createdAt`, and `updatedAt`.\n\n## 2. Connect the tables to Main\n\nOpen each Data Table node and select the corresponding table:\n\n**AGENTS**\n- Find Agent\n\n**UPDATES**\n- Register UPDATE\n- Get Agent UPDATES\n- Get BRIEF UPDATES\n\n**INCIDENTS**\n- Register ALERT Incident\n- Get Agent INCIDENTS\n- Get BRIEF INCIDENTS\n\n**ROUTING_RULES**\n- Get Active ALERT Routing Rules\n\n**MESSAGES**\n- Find Existing Message\n- Register Inbound Message\n\n## 3. Set up the Send SMS workflow\n\nThis template includes Main and Send SMS on the same canvas.\n\nTo make the SMS responses work:\n\n1. Select all nodes in the **Send SMS** section, including `Execute Sub-workflow Trigger`.\n2. Copy them into a new n8n workflow.\n3. Name it **SMS Territorial Operations Hub - Send SMS** and save it.\n4. Connect its three Data Table nodes to your MESSAGES table.\n5. Return to Main and open these four nodes:\n   - `Execute UPDATE SMS Reply`\n   - `Execute ALERT SMS Reply`\n   - `Execute STATUS SMS Reply`\n   - `Execute BRIEF SMS Reply`\n6. Select the new Send SMS workflow in each node.\n\nSave your changes and keep both workflows inactive during setup.\n\n**Important:** The Send SMS section shown on the combined canvas is for reference. It must be saved as a separate workflow before Main can call it.\n\n## 4. Prepare demo data\n\nAdd the fictional test agent to **AGENTS** and the example ALERT rule to **ROUTING_RULES**, using the values in `SETUP.md`.\n\n## 5. Final checks\n\n- [ ] All Data Table nodes are connected.\n- [ ] All four Send SMS calls are connected.\n- [ ] OpenAI Chat Model uses your own credential.\n- [ ] Both workflows remain inactive.\n\n**Important:** Importing the JSON does not automatically create Data Tables or connect resources from another n8n instance.\n\n\n[Complete installation and configuration guide](https://github.com/Alassnr10/sms-territorial-operations-hub/blob/main/SETUP.md)",
+        "height": 1488,
         "width": 1168
       },
       "type": "n8n-nodes-base.stickyNote",
@@ -2288,7 +2288,7 @@
         0
       ],
       "typeVersion": 1,
-      "id": "c95d811e-be42-4a22-83de-3687be009353",
+      "id": "bcaac890-a24a-4b02-8a79-5af081def5ae",
       "name": "Sticky Note2"
     },
     {
@@ -2304,7 +2304,7 @@
         3008
       ],
       "typeVersion": 1,
-      "id": "004b749c-9ec0-4d47-90f5-1998a26f24b5",
+      "id": "8426093e-22fc-49ca-b08d-d3c5b4253f25",
       "name": "Sticky Note3"
     },
     {
@@ -2320,7 +2320,7 @@
         2752
       ],
       "typeVersion": 1,
-      "id": "abc113e3-c7ec-4299-976f-8714c3f6fdfd",
+      "id": "508eb1a3-aa38-4a98-adb5-78c478e9375f",
       "name": "Sticky Note4"
     },
     {
@@ -2336,7 +2336,7 @@
         3392
       ],
       "typeVersion": 1,
-      "id": "900d93a7-c22e-4f59-9321-d4d0388aafff",
+      "id": "bdd0519f-ea6f-47e8-b53e-44bc4ef7f929",
       "name": "Sticky Note5"
     },
     {
@@ -2352,7 +2352,7 @@
         2896
       ],
       "typeVersion": 1,
-      "id": "dcf565a9-c560-4fef-bc5b-9d7050acb1c9",
+      "id": "32e3c023-8019-4be4-95fb-d7f4f340f1ff",
       "name": "Sticky Note6"
     },
     {
@@ -2368,7 +2368,7 @@
         3360
       ],
       "typeVersion": 1,
-      "id": "719daf21-5c72-4005-bf9f-f6f1702f9ef6",
+      "id": "4fd2d02e-bf8a-4fa5-ae73-eb9461921407",
       "name": "Sticky Note7"
     },
     {
@@ -2382,7 +2382,7 @@
           ]
         }
       },
-      "id": "2974bf4c-82b8-45ab-9af8-371b43c805e7",
+      "id": "0e3402e6-1232-4339-a6c9-073314144694",
       "name": "Execute Sub-workflow Trigger",
       "type": "n8n-nodes-base.executeWorkflowTrigger",
       "typeVersion": 1.2,
@@ -2411,7 +2411,7 @@
           "dotNotation": true
         }
       },
-      "id": "06e0d32c-5768-4cda-aed0-afbb2f6b6bb6",
+      "id": "5a476f0a-ed6d-492f-a3d2-fa7430eb50ed",
       "name": "Validate and Format SMS",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -2445,7 +2445,7 @@
         },
         "returnAll": true
       },
-      "id": "574814af-3816-41fc-9cd2-78a740908fb5",
+      "id": "a1dfe16c-8aaf-4e6c-824f-5fde9f077799",
       "name": "Check Existing Outbound",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -2482,7 +2482,7 @@
         },
         "options": {}
       },
-      "id": "e9fc1879-b854-4bc1-9ecd-afc011a2a6e8",
+      "id": "84024c22-d8d8-4af8-a085-4da7cbe948aa",
       "name": "Decide Send",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
@@ -2631,7 +2631,7 @@
           "dotNotation": true
         }
       },
-      "id": "b9707a3c-d8b7-4cad-b9a4-7fdaede447fe",
+      "id": "2d072b40-2156-4290-8b0d-556da6ad9283",
       "name": "Return Send Result",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -2819,7 +2819,7 @@
         },
         "options": {}
       },
-      "id": "fb190dae-88d9-4744-a143-b9709d69e44e",
+      "id": "4af769bf-425e-46b0-ad31-fdb75512fa60",
       "name": "Register Outbound",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -2861,7 +2861,7 @@
           "dotNotation": true
         }
       },
-      "id": "22f5261b-c58d-4fa0-92ac-5662de877e62",
+      "id": "3b983296-dc96-4b0d-b784-6c2e7c3ac5d4",
       "name": "Map Provider Payload",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -2874,7 +2874,7 @@
     },
     {
       "parameters": {},
-      "id": "8a1cbfdf-9053-4ab6-add8-1c4922fa175b",
+      "id": "dd68f369-b107-45ed-9033-6588b70989aa",
       "name": "Simulated SMS Send",
       "type": "n8n-nodes-base.noOp",
       "typeVersion": 1,
@@ -2940,7 +2940,7 @@
           "dotNotation": true
         }
       },
-      "id": "658a07b2-ab5f-4d22-9b6a-0c0911619270",
+      "id": "05627ec1-7bee-4264-b021-16e30ba5f56f",
       "name": "Normalize Send Result",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -3037,7 +3037,7 @@
         },
         "options": {}
       },
-      "id": "ab473e63-3d9d-4c30-9d22-f1f6d4912a4d",
+      "id": "dad08bc1-627b-4a76-bf11-67630d6ca123",
       "name": "Save Send Result",
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
@@ -3053,7 +3053,7 @@
       "parameters": {
         "jsCode": "const inputs = $input.all();\nconst first = inputs[0]?.json ?? {};\nconst payload = first.sms_payload;\nif (!payload || typeof payload !== 'object' || Array.isArray(payload)) {\n  throw new Error('Invalid simulated SMS payload: payload object is missing.');\n}\nconst requiredStrings = ['message_id', 'idempotency_key', 'correlation_id', 'phone_from', 'phone_to', 'text', 'intent'];\nfor (const field of requiredStrings) {\n  if (typeof payload[field] !== 'string' || payload[field].trim().length === 0) {\n    throw new Error('Invalid simulated SMS payload: ' + field + ' must be a non-empty string.');\n  }\n}\nif (!['UPDATE', 'ALERT', 'STATUS', 'BRIEF'].includes(payload.intent)) {\n  throw new Error('Invalid simulated SMS payload: unsupported intent.');\n}\nconst splitPreservingText = (value, maxUnits) => {\n  let chars = Array.from(value);\n  const chunks = [];\n  const units = (items) => items.reduce((total, character) => total + character.length, 0);\n  while (units(chars) > maxUnits) {\n    let used = 0;\n    let end = 0;\n    let lastWhitespaceBoundary = 0;\n    while (end < chars.length && used + chars[end].length <= maxUnits) {\n      used += chars[end].length;\n      end += 1;\n      if (/\\s/u.test(chars[end - 1])) lastWhitespaceBoundary = end;\n    }\n    const cut = lastWhitespaceBoundary > 0 ? lastWhitespaceBoundary : end;\n    if (cut <= 0) throw new Error('Unable to segment simulated SMS text safely.');\n    chunks.push(chars.slice(0, cut).join(''));\n    chars = chars.slice(cut);\n  }\n  if (chars.length > 0) chunks.push(chars.join(''));\n  return chunks;\n};\nconst output = [];\nconst parts = splitPreservingText(payload.text, 55);\nfor (let index = 0; index < parts.length; index += 1) {\n  const partNumber = String(index + 1).padStart(3, '0');\n  output.push({\n    ...payload,\n    message_id: payload.message_id + ':part:' + partNumber,\n    idempotency_key: payload.idempotency_key + ':part:' + partNumber,\n    text: (parts.length > 1 ? String(index + 1) + '/' + String(parts.length) + ': ' : '') + parts[index],\n    part_number: index + 1,\n    part_count: parts.length,\n    send_allowed: true,\n    processing_status: 'simulation_pending',\n    delivery_status: 'not_attempted',\n    attempt_count: 0,\n    error_code: null,\n    recipient_department: null,\n  });\n}\nconst notifications = Array.isArray(payload.unaddressed_notifications) ? payload.unaddressed_notifications : [];\nfor (const notice of notifications) {\n  const department = typeof notice?.department === 'string' ? notice.department.trim() : '';\n  const incidentId = typeof notice?.incident_id === 'string' ? notice.incident_id.trim() : '';\n  if (!department || !incidentId) {\n    throw new Error('Invalid simulated SMS payload: unresolved department notice lacks department or incident_id.');\n  }\n  const suffix = encodeURIComponent(department.toLowerCase());\n  output.push({\n    message_id: payload.message_id + ':department:' + suffix,\n    idempotency_key: payload.idempotency_key + ':department:' + suffix,\n    correlation_id: payload.correlation_id,\n    phone_from: payload.phone_from,\n    phone_to: '',\n    text: 'Incident ' + incidentId + ' destiné au service ' + department +\n      '; numéro précis absent des données de routage, notification non envoyée.',\n    intent: 'ALERT',\n    part_number: 1,\n    part_count: 1,\n    send_allowed: false,\n    processing_status: 'recipient_unresolved',\n    delivery_status: 'not_attempted',\n    attempt_count: 0,\n    error_code: 'recipient_unresolved',\n    recipient_department: department,\n    incident_id: incidentId,\n    rule_ids: Array.isArray(notice.rule_ids) ? notice.rule_ids : [],\n  });\n}\nreturn output.map((json) => ({ json, pairedItem: { item: 0 } }));"
       },
-      "id": "e480c3c6-8a21-4831-9e62-0ad9f8761196",
+      "id": "fff17d33-d2d8-478e-8cc3-c577154d7f9b",
       "name": "Split SMS into Segments",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -3202,7 +3202,7 @@
           "dotNotation": true
         }
       },
-      "id": "81a02b9c-6ea0-44c1-8160-c5d80199b67f",
+      "id": "1d1ae4ec-b03b-47b0-833c-19134c168558",
       "name": "Return Existing Outbound",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.5,
@@ -3236,7 +3236,7 @@
         },
         "options": {}
       },
-      "id": "76dcad28-99bc-4ef9-8ccd-9e1baaae74be",
+      "id": "a85cf0c1-d07a-455b-b7a2-e1d24f287510",
       "name": "Check Sendable",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
@@ -3251,7 +3251,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "const payload = $('Validate and Format SMS').first().json.sms_payload ?? {};\nreturn { json: {\n  result_status: 'technical_error',\n  error_code: 'SMS_PREPARATION_FAILED',\n  source_message_id: payload.correlation_id ?? payload.message_id ?? null,\n  message_id: payload.message_id ?? null,\n  idempotency_key: payload.idempotency_key ?? null,\n  processing_status: 'not_started',\n  success_confirmation: false,\n  retry_safe: true,\n} };"
       },
-      "id": "950b0236-c43e-4b92-a39f-1a60a7fe4fd1",
+      "id": "1e2e6a4d-e8ba-46b7-99d4-96ec181635b2",
       "name": "Return SMS Preparation Error",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -3265,7 +3265,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "const item = $('Split SMS into Segments').item.json ?? {};\nreturn { json: {\n  result_status: 'technical_error',\n  error_code: 'SMS_DEDUP_LOOKUP_FAILED',\n  source_message_id: item.correlation_id ?? item.message_id ?? null,\n  message_id: item.message_id ?? null,\n  idempotency_key: item.idempotency_key ?? null,\n  processing_status: item.processing_status ?? 'not_completed',\n  success_confirmation: false,\n  retry_safe: true,\n} };"
       },
-      "id": "754053bf-c0f8-46b9-91a7-b7ba4571923b",
+      "id": "b1cfc97b-b303-4e71-9e6d-30c90c3b616b",
       "name": "Return SMS Dedup Lookup Error",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -3279,7 +3279,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "const item = $('Split SMS into Segments').item.json ?? {};\nreturn { json: {\n  result_status: 'technical_error',\n  error_code: 'SMS_LOG_WRITE_FAILED',\n  source_message_id: item.correlation_id ?? item.message_id ?? null,\n  message_id: item.message_id ?? null,\n  idempotency_key: item.idempotency_key ?? null,\n  processing_status: item.processing_status ?? 'not_completed',\n  success_confirmation: false,\n  retry_safe: true,\n} };"
       },
-      "id": "a5894f65-3308-41c6-92c1-423982261812",
+      "id": "8992a390-26e6-4e77-a240-5fc82206d541",
       "name": "Return SMS Log Write Error",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -3293,7 +3293,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "const item = $('Split SMS into Segments').item.json ?? {};\nreturn { json: {\n  result_status: 'technical_error',\n  error_code: 'SMS_SIMULATION_FAILED',\n  source_message_id: item.correlation_id ?? item.message_id ?? null,\n  message_id: item.message_id ?? null,\n  idempotency_key: item.idempotency_key ?? null,\n  processing_status: item.processing_status ?? 'not_completed',\n  success_confirmation: false,\n  retry_safe: true,\n} };"
       },
-      "id": "ecec4f80-7049-4ba9-bac0-e8491b67da6d",
+      "id": "1f84ee07-25e8-4c83-9a0d-6fe1da4b7088",
       "name": "Return SMS Simulation Error",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -3307,7 +3307,7 @@
         "mode": "runOnceForEachItem",
         "jsCode": "const item = $('Split SMS into Segments').item.json ?? {};\nreturn { json: {\n  result_status: 'technical_error',\n  error_code: 'SMS_RESULT_UPDATE_FAILED',\n  source_message_id: item.correlation_id ?? item.message_id ?? null,\n  message_id: item.message_id ?? null,\n  idempotency_key: item.idempotency_key ?? null,\n  processing_status: item.processing_status ?? 'not_completed',\n  success_confirmation: false,\n  retry_safe: true,\n} };"
       },
-      "id": "9a0ade28-35ef-4769-86bb-cac36fe73d4a",
+      "id": "5094eea9-6cd7-4e1b-9beb-127b89cd0d2c",
       "name": "Return SMS Result Update Error",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -3320,7 +3320,7 @@
       "parameters": {
         "jsCode": "const segmentItems = $('Split SMS into Segments').all();\nif (!segmentItems.length) {\n  throw new Error('SMS_SEGMENTS_UNAVAILABLE');\n}\n\nconst segmentByKey = new Map();\nfor (const item of segmentItems) {\n  const segment = item.json ?? {};\n  const key = segment.idempotency_key;\n  if (typeof key !== 'string' || key.trim().length === 0) {\n    throw new Error('SMS_SEGMENT_IDEMPOTENCY_KEY_MISSING');\n  }\n  if (segmentByKey.has(key)) {\n    throw new Error('SMS_SEGMENT_IDEMPOTENCY_KEY_NOT_UNIQUE');\n  }\n  segmentByKey.set(key, segment);\n}\n\nconst existingByKey = new Map();\nfor (const item of $input.all()) {\n  let row = item.json;\n  if (row && typeof row === 'object' && !Array.isArray(row) &&\n      typeof row.idempotency_key !== 'string' &&\n      row.json && typeof row.json === 'object' && !Array.isArray(row.json)) {\n    row = row.json;\n  }\n  if (!row || typeof row !== 'object' || Array.isArray(row) || Object.keys(row).length === 0) {\n    continue;\n  }\n\n  const key = row.idempotency_key;\n  if (typeof key !== 'string' || key.length === 0 || !segmentByKey.has(key)) {\n    throw new Error('SMS_OUTBOUND_LOOKUP_KEY_MISMATCH');\n  }\n  if (row.direction !== 'outbound' ||\n      row.id === undefined || row.id === null ||\n      String(row.id).trim().length === 0) {\n    throw new Error('SMS_OUTBOUND_LOOKUP_RECORD_INVALID');\n  }\n  if (existingByKey.has(key)) {\n    throw new Error('SMS_OUTBOUND_RECORD_NOT_UNIQUE');\n  }\n  existingByKey.set(key, row);\n}\n\nreturn segmentItems.map((item) => {\n  const source = item.json ?? {};\n  const key = source.idempotency_key;\n  const segment = { ...source };\n  delete segment.id;\n  delete segment.createdAt;\n  delete segment.updatedAt;\n\n  const existing = existingByKey.get(key);\n  const output = existing\n    ? {\n        ...segment,\n        ...existing,\n        send_allowed: source.send_allowed === true,\n        part_number: source.part_number ?? null,\n        part_count: source.part_count ?? null,\n        recipient_department: source.recipient_department ?? null,\n        existing_outbound: true,\n      }\n    : { ...segment, existing_outbound: false };\n\n  return { json: output, pairedItem: { item: 0 } };\n});"
       },
-      "id": "014456a6-df8f-4803-ba9e-5d73beb0a874",
+      "id": "cc3d1840-7465-4483-a9c4-73add2052a10",
       "name": "Restore SMS Segment Context",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -3337,7 +3337,7 @@
         "width": 640,
         "color": "#FFFFFF"
       },
-      "id": "a5a2bb57-b27b-4386-b813-d11b54175f0f",
+      "id": "ed90873c-cb34-431c-9eb5-9bf477836a54",
       "name": "Sub-workflow role",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
@@ -3353,7 +3353,7 @@
         "width": 896,
         "color": "#FFFFFF"
       },
-      "id": "772127dd-3d57-448c-abeb-81d9f662aa27",
+      "id": "0bd7d842-e338-4485-88c6-3e3aafa6e818",
       "name": "MESSAGES table setup",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
@@ -3369,7 +3369,7 @@
         "width": 624,
         "color": "#FAFAFA"
       },
-      "id": "44f2661a-1916-4664-8a38-61fb507b942c",
+      "id": "0008741c-842b-4173-93a9-bc703227016c",
       "name": "Segmentation and deduplication",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
@@ -3385,7 +3385,7 @@
         "width": 1136,
         "color": "#FCFCFC"
       },
-      "id": "8f5acc66-2cdc-46ba-b8da-5192254b5eea",
+      "id": "2f9dfee6-9b23-4488-bf60-ee8d11e0ba00",
       "name": "Simulation and result logging",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
